@@ -63,6 +63,16 @@
             padding: 0;
         }
 
+        /* Image Styling */
+        .content-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 10px;
+            margin: 1.5rem 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
         /* Problem Section List Items */
         .problem-section .benefits-list li {
             margin: 1rem 0;
@@ -106,17 +116,6 @@
             text-align: center;
             margin-top: 2rem;
         }
-
-        .image-placeholder {
-            height: 150px;
-            background: #e9ecef;
-            border-radius: 10px;
-            margin: 1.5rem 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #adb5bd;
-        }
     </style>
 </head>
 <body>
@@ -133,15 +132,10 @@
             <p>Science reveals it might not be your lifestyle...<br>but failing cellular energy production*</p>
         </section>
 
-        .image-style {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    border-radius: 10px;
-    margin: 1.5rem 0;
-}
-
-        <img src="images/tired1.png" alt="tired woman" class="image-style">
+        <img src="mitochondria-diagram.jpg" 
+             alt="Mitochondrial Energy Production Diagram"
+             class="content-image"
+             loading="lazy">
 
         <section class="solution-section">
             <h2>The Mitochondrial Connection</h2>
@@ -153,17 +147,10 @@
                 <li>Overall vitality</li>
             </ul>
 
-           <!-- In the HTML body -->
-<section class="solution-section">
-    <!-- ... other content ... -->
-    
-    <img src="images/full-product.png" 
-         alt="MitoLyn Supplement Bottle" 
-         class="image-style"
-         loading="lazy">
-    
-    <!-- ... rest of content ... -->
-</section>
+            <img src="mitolyn-supplement.jpg" 
+                 alt="MitoLyn Supplement Bottle"
+                 class="content-image"
+                 loading="lazy">
 
             <h3>What If You Could Support Your Cellular Power Plants?</h3>
             <p>MitoLyn® combines 4 clinically-studied ingredients shown to:</p>

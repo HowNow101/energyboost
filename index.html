@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feeling Constant Fatigue? It Might Be Your Cellular Energy</title>
+    <title>Recharge Your Cellular Energy | MitoLyn</title>
     <style>
         * {
             margin: 0;
@@ -24,19 +24,13 @@
         }
 
         .problem-section {
-            background: #2A2A57;
-            color: white;
+            background: white;
+            color: #2A2A57;
             padding: 2rem 1.5rem;
             text-align: center;
             border-radius: 15px;
             margin: 1.5rem 0;
-
-<ul class="benefits-list">
-    <li>Constant daytime fatigue</li>
-    <li>Brain fog & lack of focus</li>
-    <li>Slow post-workout recovery</li>
-    <li>Low motivation & drive</li>
-</ul>
+            box-shadow: 0 5px 25px rgba(0,0,0,0.08);
         }
 
         .solution-section {
@@ -64,10 +58,34 @@
             transform: translateY(-2px);
         }
 
+        /* Unified List Styling */
         .benefits-list {
             list-style: none;
             margin: 1.5rem 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .benefits-list li {
+            position: relative;
+            padding-left: 40px;
+            margin: 0.75rem 0;
+            text-align: center;
+            width: max-content;
+            max-width: 400px;
+        }
+
+        .benefits-list li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 24px;
+            height: 24px;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%2300C9A7"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>') no-repeat center;
         }
 
         /* Image Styling */
@@ -81,59 +99,6 @@
             display: block;
         }
 
-        /* Problem Section List Items */
-        .problem-section .benefits-list li {
-            margin: 1rem 0;
-            padding-left: 30px;
-            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="%23ffffff"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>') no-repeat left center;
-            background-size: 20px;
-            display: inline-block;
-            text-align: left;
-        }
-/* Problem Section List Items */
-.problem-section .benefits-list {
-    display: block;
-    margin: 1rem auto;
-    padding: 0;
-    text-align: left;
-    max-width: 400px;
-}
-
-.problem-section .benefits-list li {
-    margin: 1rem 0;
-    padding-left: 40px;
-    background-size: 24px;
-    display: block;
-    text-align: left;
-    line-height: 1.4;
-}
-        /* Solution Section List Items */
-        .solution-section .benefits-list {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .solution-section .benefits-list li {
-            position: relative;
-            padding-left: 40px;
-            margin: 0.5rem 0;
-            text-align: center;
-            list-style: none;
-            width: max-content;
-        }
-
-        .solution-section .benefits-list li::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 24px;
-            height: 24px;
-            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%2300C9A7"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>') no-repeat center;
-        }
-
         .disclaimer {
             font-size: 0.8rem;
             color: #666;
@@ -145,6 +110,11 @@
 <body>
     <div class="container">
         <section class="problem-section">
+            <img src="images/tired1.png" 
+                 alt="Woman feeling exhausted"
+                 class="content-image"
+                 loading="lazy">
+
             <h1>Feeling Exhausted No Matter How Much You Rest?</h1>
             <p>If you're experiencing:</p>
             <ul class="benefits-list">
@@ -155,11 +125,6 @@
             </ul>
             <p>Science reveals it might not be your lifestyle...<br>but failing cellular energy production*</p>
         </section>
-
-        <img src="images/tired1.png" 
-             alt="Mitochondrial Energy Production Diagram"
-             class="content-image"
-             loading="lazy">
 
         <section class="solution-section">
             <h2>The Mitochondrial Connection</h2>
